@@ -4,190 +4,1653 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>跨境电商工具站 - 卖家利润计算器大全 | SellerTools Pro</title>
-    <meta name="description" content="免费的跨境电商工具集，涵盖亚马逊、TikTok Shop、Shopify、Etsy、eBay 等平台的FBA利润计算器、ROI计算器、佣金计算器，帮助跨境卖家精准算账。">
-    <meta name="keywords" content="跨境电商工具, FBA利润计算器, 亚马逊计算器, TikTok Shop计算器, 跨境卖家工具">
+    <meta name="description" content="免费的跨境电商工具集，涵盖亚马逊、TikTok Shop、Shopify、Etsy、eBay、Walmart、Mercado Libre等平台的FBA利润计算器、ROI计算器、佣金计算器，帮助跨境卖家精准算账。">
+    <meta name="keywords" content="跨境电商工具, FBA利润计算器, 亚马逊计算器, 跨境卖家工具">
     <link rel="stylesheet" href="tailwind.css">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
-    <!-- 导航栏 -->
     <header class="bg-white border-b border-gray-200 sticky top-0 z-40">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <span class="text-2xl">⚡</span>
                 <span class="font-bold text-xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-600">SellerTools Pro</span>
             </div>
-            <a href="https://lemonsqueezy.com" target="_blank" class="text-sm bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg font-medium transition">激活专业版</a>
+            <a href="https://lemonsqueezy.com" target="_blank" class="text-sm bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg font-medium transition">Activate Pro</a>
         </div>
     </header>
 
-    <!-- 英雄区域 -->
     <section class="bg-gray-950 text-white py-20 px-4 text-center relative overflow-hidden">
         <div class="max-w-4xl mx-auto relative">
-            <span class="text-sm bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 px-3 py-1 rounded-full font-semibold">🔥 跨境电商卖家必备工具集</span>
+            <span class="text-sm bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 px-3 py-1 rounded-full font-semibold">🔥 Cross-Border Seller Tools</span>
             <h1 class="text-4xl sm:text-5xl font-black tracking-tight mt-6 mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-200">
-                300+ 免费跨境电商计算器
+                139+ Free Seller Calculators
             </h1>
             <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
-                专为亚马逊、TikTok Shop、Shopify、Etsy、eBay 卖家打造。<br>
-                实时计算利润、ROI、平台佣金和FBA费用，无需注册，完全免费。
+                Real-time profit, margin, ROI &amp; commission calculators for Amazon, TikTok Shop, Shopify, Etsy, eBay, Walmart, Mercado Libre &amp; more.<br>
+                Updated for 2026. No registration required.
             </p>
         </div>
     </section>
 
-    <!-- 平台分类导航 -->
     <div class="max-w-6xl mx-auto px-4 -mt-8 mb-8">
         <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-2 flex flex-wrap justify-center gap-2">
-            <button onclick="filterTools('all')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-900 text-white" data-tab="all">全部工具</button>
-            <button onclick="filterTools('amazon')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="amazon">🛒 亚马逊</button>
-            <button onclick="filterTools('tiktok')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="tiktok">🎵 TikTok Shop</button>
-            <button onclick="filterTools('shopify')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="shopify">🛍️ Shopify</button>
-            <button onclick="filterTools('etsy')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="etsy">🧶 Etsy</button>
-            <button onclick="filterTools('ebay')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="ebay">📦 eBay</button>
+            <button onclick="filterTools('all')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-900 text-white" data-tab="all">All Tools</button>
+            <button onclick="filterTools('amazon')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="amazon">Amazon</button>
+            <button onclick="filterTools('tiktok')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="tiktok">TikTok Shop</button>
+            <button onclick="filterTools('shopify')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="shopify">Shopify</button>
+            <button onclick="filterTools('etsy')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="etsy">Etsy</button>
+            <button onclick="filterTools('ebay')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="ebay">eBay</button>
+            <button onclick="filterTools('walmart')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="walmart">Walmart</button>
+            <button onclick="filterTools('mercadolibre')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="mercadolibre">Mercado Libre</button>
         </div>
     </div>
 
-    <!-- 搜索栏 -->
     <div class="max-w-6xl mx-auto px-4 mb-8">
-        <input type="text" id="searchInput" oninput="filterTools('all')" placeholder="搜索工具名称、平台或国家...（如：Amazon US 电子）"
+        <input type="text" id="searchInput" oninput="filterTools(getCurrentTab())" placeholder="Search by platform, country, or category..."
                class="w-full bg-white border border-gray-200 rounded-xl px-5 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition placeholder:text-gray-400">
     </div>
 
-    <!-- 工具网格 -->
     <main class="max-w-6xl mx-auto px-4 pb-20">
         <div id="toolsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            <!-- 工具卡片 1：亚马逊美国电子产品 -->
-            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon us electronics fba 利润 计算器 美国">
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon us electronics">
                 <div>
                     <div class="flex justify-between items-start mb-3">
-                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon 美国站</span>
-                        <span class="text-xs text-gray-400">FBA 计算器</span>
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">电子产品利润 & ROI 计算器</h3>
-                    <p class="text-sm text-gray-500 mb-4">2026年最新亚马逊美国站电子产品类目FBA费用和阶梯佣金计算。</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon US Electronics profit, fees, and margin. 2026 rates.</p>
                 </div>
-                <a href="/amazon-us-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">立即使用 →</a>
+                <a href="/amazon-us-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
             </div>
-
-            <!-- 工具卡片 2：TikTok Shop 美国 -->
-            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between hidden" data-platform="tiktok" data-tags="tiktok shop us beauty 美妆 美国">
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon us clothing">
                 <div>
                     <div class="flex justify-between items-start mb-3">
-                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop 美国</span>
-                        <span class="text-xs text-gray-400">社交电商</span>
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">美妆个护利润率计算器</h3>
-                    <p class="text-sm text-gray-500 mb-4">计算6%平台佣金和达人带货分成后的实际利润。</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon US Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
                 </div>
-                <a href="#" class="block text-center bg-gray-100 text-gray-400 font-medium py-2.5 px-4 rounded-xl text-sm cursor-not-allowed">即将上线</a>
+                <a href="/amazon-us-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
             </div>
-
-            <!-- 工具卡片 3：Shopify 英国 -->
-            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between hidden" data-platform="shopify" data-tags="shopify uk clothing 服装 英国">
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon us beauty">
                 <div>
                     <div class="flex justify-between items-start mb-3">
-                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify 英国站</span>
-                        <span class="text-xs text-gray-400">独立站</span>
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">服装类目利润计算器</h3>
-                    <p class="text-sm text-gray-500 mb-4">结合英国VAT税率和Shopify交易手续费的利润计算。</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon US Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
                 </div>
-                <a href="#" class="block text-center bg-gray-100 text-gray-400 font-medium py-2.5 px-4 rounded-xl text-sm cursor-not-allowed">即将上线</a>
+                <a href="/amazon-us-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
             </div>
-
-            <!-- 工具卡片 4：Etsy 德国 -->
-            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between hidden" data-platform="etsy" data-tags="etsy germany handmade 手作 德国">
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon us home-kitchen">
                 <div>
                     <div class="flex justify-between items-start mb-3">
-                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy 德国站</span>
-                        <span class="text-xs text-gray-400">手作市场</span>
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">手工艺品利润计算器</h3>
-                    <p class="text-sm text-gray-500 mb-4">计算6.5%交易费、$0.20上架费和欧洲VAT后的净利润。</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon US Home & Kitchen profit, fees, and margin. 2026 rates.</p>
                 </div>
-                <a href="#" class="block text-center bg-gray-100 text-gray-400 font-medium py-2.5 px-4 rounded-xl text-sm cursor-not-allowed">即将上线</a>
+                <a href="/amazon-us-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
             </div>
-
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon us sports">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Sports & Outdoors</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon US Sports & Outdoors profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-us-sports-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon uk electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon UK Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-uk-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon uk clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon UK Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-uk-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon uk beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon UK Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-uk-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon uk home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon UK Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-uk-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon uk sports">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Sports & Outdoors</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon UK Sports & Outdoors profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-uk-sports-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon de electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon DE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon DE Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-de-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon de clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon DE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon DE Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-de-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon de beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon DE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon DE Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-de-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon de home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon DE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon DE Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-de-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon de sports">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon DE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Sports & Outdoors</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon DE Sports & Outdoors profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-de-sports-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon fr electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon FR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon FR Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-fr-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon fr clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon FR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon FR Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-fr-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon fr beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon FR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon FR Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-fr-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon fr home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon FR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon FR Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-fr-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon fr sports">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon FR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Sports & Outdoors</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon FR Sports & Outdoors profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-fr-sports-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon jp electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon JP</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon JP Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-jp-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon jp clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon JP</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon JP Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-jp-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon jp beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon JP</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon JP Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-jp-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon jp home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon JP</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon JP Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-jp-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon jp sports">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon JP</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Sports & Outdoors</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon JP Sports & Outdoors profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-jp-sports-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon ca electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon CA Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-ca-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon ca clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon CA Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-ca-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon ca beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon CA Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-ca-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon ca home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon CA Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-ca-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon ca sports">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Sports & Outdoors</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon CA Sports & Outdoors profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-ca-sports-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon au electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon AU</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon AU Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-au-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon au clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon AU</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon AU Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-au-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon au beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon AU</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon AU Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-au-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon au home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon AU</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon AU Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-au-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon au sports">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon AU</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Sports & Outdoors</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon AU Sports & Outdoors profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-au-sports-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon ae electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon AE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon AE Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-ae-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon ae clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon AE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon AE Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-ae-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon ae beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon AE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon AE Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-ae-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon ae home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon AE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon AE Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-ae-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon ae sports">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon AE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Sports & Outdoors</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Amazon AE Sports & Outdoors profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/amazon-ae-sports-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop us beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop US Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-us-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop us fashion">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop US Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-us-fashion-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop us electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop US Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-us-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop uk beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop UK Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-uk-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop uk fashion">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop UK Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-uk-fashion-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop uk electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop UK Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-uk-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop id beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop ID</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop ID Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-id-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop id fashion">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop ID</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop ID Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-id-fashion-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop id electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop ID</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop ID Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-id-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop th beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop TH</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop TH Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-th-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop th fashion">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop TH</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop TH Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-th-fashion-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop th electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop TH</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop TH Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-th-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop vn beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop VN</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop VN Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-vn-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop vn fashion">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop VN</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop VN Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-vn-fashion-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop vn electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop VN</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop VN Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-vn-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop my beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop MY</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop MY Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-my-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop my fashion">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop MY</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop MY Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-my-fashion-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop my electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop MY</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop MY Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-my-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop ph beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop PH</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop PH Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-ph-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop ph fashion">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop PH</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop PH Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-ph-fashion-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop ph electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop PH</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop PH Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-ph-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop sg beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop SG</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop SG Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-sg-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop sg fashion">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop SG</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop SG Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-sg-fashion-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="tiktok" data-tags="tiktok shop sg electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop SG</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate TikTok Shop SG Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/tiktok-sg-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify us clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify US Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-us-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify us home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify US Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-us-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify us beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify US Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-us-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify uk clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify UK Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-uk-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify uk home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify UK Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-uk-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify uk beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify UK Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-uk-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify ca clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify CA Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-ca-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify ca home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify CA Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-ca-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify ca beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify CA Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-ca-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify au clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify AU</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify AU Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-au-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify au home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify AU</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify AU Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-au-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify au beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify AU</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify AU Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-au-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify de clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify DE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify DE Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-de-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify de home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify DE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify DE Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-de-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify de beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify DE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify DE Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-de-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify fr clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify FR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify FR Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-fr-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify fr home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify FR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify FR Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-fr-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="shopify" data-tags="shopify fr beauty">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify FR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Beauty & Cosmetics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Shopify FR Beauty & Cosmetics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/shopify-fr-beauty-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy us handmade">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Handmade & Crafts</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy US Handmade & Crafts profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-us-handmade-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy us clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy US Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-us-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy us home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy US Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-us-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy uk handmade">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Handmade & Crafts</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy UK Handmade & Crafts profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-uk-handmade-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy uk clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy UK Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-uk-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy uk home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy UK Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-uk-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy de handmade">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy DE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Handmade & Crafts</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy DE Handmade & Crafts profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-de-handmade-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy de clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy DE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy DE Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-de-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy de home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy DE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy DE Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-de-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy fr handmade">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy FR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Handmade & Crafts</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy FR Handmade & Crafts profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-fr-handmade-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy fr clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy FR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy FR Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-fr-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy fr home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy FR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy FR Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-fr-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy ca handmade">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Handmade & Crafts</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy CA Handmade & Crafts profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-ca-handmade-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy ca clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy CA Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-ca-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy ca home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy CA Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-ca-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy au handmade">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy AU</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Handmade & Crafts</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy AU Handmade & Crafts profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-au-handmade-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy au clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy AU</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy AU Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-au-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="etsy" data-tags="etsy au home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy AU</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Etsy AU Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/etsy-au-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay us electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay US Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-us-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay us clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay US Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-us-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay us collectibles">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Collectibles & Vintage</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay US Collectibles & Vintage profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-us-collectibles-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay uk electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay UK Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-uk-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay uk clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay UK Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-uk-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay uk collectibles">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay UK</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Collectibles & Vintage</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay UK Collectibles & Vintage profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-uk-collectibles-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay de electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay DE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay DE Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-de-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay de clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay DE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay DE Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-de-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay de collectibles">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay DE</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Collectibles & Vintage</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay DE Collectibles & Vintage profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-de-collectibles-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay au electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay AU</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay AU Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-au-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay au clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay AU</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay AU Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-au-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay au collectibles">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay AU</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Collectibles & Vintage</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay AU Collectibles & Vintage profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-au-collectibles-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay fr electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay FR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay FR Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-fr-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay fr clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay FR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay FR Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-fr-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay fr collectibles">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay FR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Collectibles & Vintage</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay FR Collectibles & Vintage profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-fr-collectibles-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay it electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay IT</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay IT Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-it-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay it clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay IT</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay IT Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-it-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay it collectibles">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay IT</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Collectibles & Vintage</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay IT Collectibles & Vintage profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-it-collectibles-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay ca electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay CA Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-ca-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay ca clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay CA Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-ca-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="ebay" data-tags="ebay ca collectibles">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">eBay CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Collectibles & Vintage</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate eBay CA Collectibles & Vintage profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/ebay-ca-collectibles-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="walmart" data-tags="walmart us electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">Walmart US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Walmart US Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/walmart-us-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="walmart" data-tags="walmart us home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">Walmart US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Walmart US Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/walmart-us-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="walmart" data-tags="walmart us clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">Walmart US</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Walmart US Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/walmart-us-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="walmart" data-tags="walmart ca electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">Walmart CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Walmart CA Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/walmart-ca-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="walmart" data-tags="walmart ca home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">Walmart CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Walmart CA Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/walmart-ca-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="walmart" data-tags="walmart ca clothing">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-md font-semibold">Walmart CA</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing / Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Walmart CA Clothing / Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/walmart-ca-clothing-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="mercadolibre" data-tags="mercado libre mx electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-yellow-50 text-yellow-700 px-2.5 py-1 rounded-md font-semibold">Mercado Libre MX</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Mercado Libre MX Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/mercadolibre-mx-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="mercadolibre" data-tags="mercado libre mx fashion">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-yellow-50 text-yellow-700 px-2.5 py-1 rounded-md font-semibold">Mercado Libre MX</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Mercado Libre MX Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/mercadolibre-mx-fashion-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="mercadolibre" data-tags="mercado libre mx home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-yellow-50 text-yellow-700 px-2.5 py-1 rounded-md font-semibold">Mercado Libre MX</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Mercado Libre MX Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/mercadolibre-mx-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="mercadolibre" data-tags="mercado libre br electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-yellow-50 text-yellow-700 px-2.5 py-1 rounded-md font-semibold">Mercado Libre BR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Mercado Libre BR Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/mercadolibre-br-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="mercadolibre" data-tags="mercado libre br fashion">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-yellow-50 text-yellow-700 px-2.5 py-1 rounded-md font-semibold">Mercado Libre BR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Mercado Libre BR Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/mercadolibre-br-fashion-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="mercadolibre" data-tags="mercado libre br home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-yellow-50 text-yellow-700 px-2.5 py-1 rounded-md font-semibold">Mercado Libre BR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Mercado Libre BR Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/mercadolibre-br-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="mercadolibre" data-tags="mercado libre ar electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-yellow-50 text-yellow-700 px-2.5 py-1 rounded-md font-semibold">Mercado Libre AR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Mercado Libre AR Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/mercadolibre-ar-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="mercadolibre" data-tags="mercado libre ar fashion">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-yellow-50 text-yellow-700 px-2.5 py-1 rounded-md font-semibold">Mercado Libre AR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Mercado Libre AR Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/mercadolibre-ar-fashion-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="mercadolibre" data-tags="mercado libre ar home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-yellow-50 text-yellow-700 px-2.5 py-1 rounded-md font-semibold">Mercado Libre AR</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Mercado Libre AR Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/mercadolibre-ar-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="mercadolibre" data-tags="mercado libre co electronics">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-yellow-50 text-yellow-700 px-2.5 py-1 rounded-md font-semibold">Mercado Libre CO</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Mercado Libre CO Electronics profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/mercadolibre-co-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="mercadolibre" data-tags="mercado libre co fashion">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-yellow-50 text-yellow-700 px-2.5 py-1 rounded-md font-semibold">Mercado Libre CO</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fashion</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Mercado Libre CO Fashion profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/mercadolibre-co-fashion-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="mercadolibre" data-tags="mercado libre co home-kitchen">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-yellow-50 text-yellow-700 px-2.5 py-1 rounded-md font-semibold">Mercado Libre CO</span>
+                        <span class="text-xs text-gray-400">Profit Calc</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 mb-4">Calculate Mercado Libre CO Home & Kitchen profit, fees, and margin. 2026 rates.</p>
+                </div>
+                <a href="/mercadolibre-co-home-kitchen-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">Launch Tool →</a>
+            </div>
         </div>
-
-        <!-- 无结果提示 -->
         <div id="noResults" class="hidden text-center py-20">
             <span class="text-5xl">🔍</span>
-            <p class="text-gray-500 mt-4 text-lg">没有找到匹配的工具</p>
-            <p class="text-gray-400 text-sm mt-1">试试其他关键词，或者换个平台分类看看</p>
+            <p class="text-gray-500 mt-4 text-lg">No matching tools found</p>
+            <p class="text-gray-400 text-sm mt-1">Try a different keyword or platform filter</p>
         </div>
     </main>
 
-    <!-- 功能介绍 -->
     <section class="bg-white border-t border-gray-200 py-20 px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl font-bold text-center text-gray-900 mb-4">为什么选择 SellerTools Pro？</h2>
-            <p class="text-gray-500 text-center mb-12 max-w-2xl mx-auto">专为跨境电商卖家设计的免费工具集，所有计算器均采用2026年最新平台费率。</p>
+            <h2 class="text-2xl font-bold text-center text-gray-900 mb-4">Why SellerTools Pro?</h2>
+            <p class="text-gray-500 text-center mb-12 max-w-2xl mx-auto">Free tools for cross-border sellers. Updated for 2026 rates.</p>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
                 <div>
                     <span class="text-4xl">⚡</span>
-                    <h3 class="font-bold text-gray-900 mt-3 mb-2">实时计算</h3>
-                    <p class="text-sm text-gray-500">数据在浏览器中本地计算，无需等待服务器响应，瞬间出结果。</p>
+                    <h3 class="font-bold text-gray-900 mt-3 mb-2">Real-time</h3>
+                    <p class="text-sm text-gray-500">All calculations run in your browser. Instant results.</p>
                 </div>
                 <div>
                     <span class="text-4xl">🔒</span>
-                    <h3 class="font-bold text-gray-900 mt-3 mb-2">隐私安全</h3>
-                    <p class="text-sm text-gray-500">所有数据仅保存在你的电脑上，不会上传到任何服务器。</p>
+                    <h3 class="font-bold text-gray-900 mt-3 mb-2">Private</h3>
+                    <p class="text-sm text-gray-500">Data stays on your device. Nothing uploaded.</p>
                 </div>
                 <div>
                     <span class="text-4xl">🌍</span>
-                    <h3 class="font-bold text-gray-900 mt-3 mb-2">多平台支持</h3>
-                    <p class="text-sm text-gray-500">覆盖亚马逊、TikTok Shop、Shopify、Etsy、eBay等主流平台。</p>
+                    <h3 class="font-bold text-gray-900 mt-3 mb-2">Multi-Platform</h3>
+                    <p class="text-sm text-gray-500">Amazon, TikTok Shop, Shopify, Etsy, eBay &amp; more.</p>
                 </div>
                 <div>
                     <span class="text-4xl">💰</span>
-                    <h3 class="font-bold text-gray-900 mt-3 mb-2">完全免费</h3>
-                    <p class="text-sm text-gray-500">基础功能完全免费使用，专业版按需解锁更多高级功能。</p>
+                    <h3 class="font-bold text-gray-900 mt-3 mb-2">Free</h3>
+                    <p class="text-sm text-gray-500">Basic features free. Premium unlocks PDF exports.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 页脚 -->
     <footer class="bg-gray-950 text-gray-500 py-12 px-4 text-center text-sm">
         <p>© 2026 SellerTools Pro. All rights reserved.</p>
-        <p class="mt-2 text-xs text-gray-600">跨境电商卖家必备工具 · 精准计算 · 助力出海</p>
+        <p class="mt-2 text-xs text-gray-600">Cross-border seller tools network</p>
     </footer>
 
     <script>
+        var currentTab = 'all';
+        function getCurrentTab() { return currentTab; }
         function filterTools(platform) {
-            const query = document.getElementById('searchInput').value.toLowerCase().trim();
-
-            // 更新按钮样式
-            document.querySelectorAll('.tab-btn').forEach(btn => {
+            currentTab = platform;
+            var query = document.getElementById('searchInput').value.toLowerCase().trim();
+            document.querySelectorAll('.tab-btn').forEach(function(btn) {
                 if (btn.dataset.tab === platform || (platform === 'all' && btn.dataset.tab === 'all')) {
                     btn.className = "tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-900 text-white";
                 } else {
                     btn.className = "tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100";
                 }
             });
-
-            const cards = document.querySelectorAll('.tool-card');
-            let visibleCount = 0;
-
-            cards.forEach(card => {
-                const cardPlatform = card.dataset.platform;
-                const cardTags = card.dataset.tags;
-
-                const matchesTab = (platform === 'all' || cardPlatform === platform);
-                const matchesSearch = !query || cardTags.includes(query);
-
-                if (matchesTab && matchesSearch) {
+            var cards = document.querySelectorAll('.tool-card');
+            var count = 0;
+            cards.forEach(function(card) {
+                var matchTab = (platform === 'all' || card.dataset.platform === platform);
+                var matchSearch = !query || card.dataset.tags.includes(query);
+                if (matchTab && matchSearch) {
                     card.classList.remove('hidden');
                     card.style.display = 'flex';
-                    visibleCount++;
+                    count++;
                 } else {
                     card.classList.add('hidden');
                 }
             });
-
-            document.getElementById('noResults').classList.toggle('hidden', visibleCount > 0);
+            document.getElementById('noResults').classList.toggle('hidden', count > 0);
         }
     </script>
 </body>
