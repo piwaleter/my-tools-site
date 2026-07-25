@@ -3,29 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>跨境电商工具站 | FBA利润计算器</title>
-    <meta name="description" content="跨境电商卖家必备工具集 - 亚马逊、TikTok Shop、Shopify 等平台利润计算器">
+    <title>跨境电商工具站 - 卖家利润计算器大全 | SellerTools Pro</title>
+    <meta name="description" content="免费的跨境电商工具集，涵盖亚马逊、TikTok Shop、Shopify、Etsy、eBay 等平台的FBA利润计算器、ROI计算器、佣金计算器，帮助跨境卖家精准算账。">
+    <meta name="keywords" content="跨境电商工具, FBA利润计算器, 亚马逊计算器, TikTok Shop计算器, 跨境卖家工具">
     <link rel="stylesheet" href="tailwind.css">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
-    <header class="bg-gray-950 text-white py-16 px-4 text-center">
-        <h1 class="text-4xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">跨境电商工具站</h1>
-        <p class="text-gray-400 text-lg mt-4">为跨境卖家提供免费、精准的利润计算工具</p>
+
+    <!-- 导航栏 -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl">⚡</span>
+                <span class="font-bold text-xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-600">SellerTools Pro</span>
+            </div>
+            <a href="https://lemonsqueezy.com" target="_blank" class="text-sm bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg font-medium transition">激活专业版</a>
+        </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-4 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
-                <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon US</span>
-                <h3 class="text-lg font-bold text-gray-900 mt-3 mb-2">电子产品利润计算器</h3>
-                <p class="text-sm text-gray-500 mb-4">亚马逊美国站电子产品FBA利润与ROI计算</p>
-                <a href="/amazon-us-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">使用工具 →</a>
+    <!-- 英雄区域 -->
+    <section class="bg-gray-950 text-white py-20 px-4 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative">
+            <span class="text-sm bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 px-3 py-1 rounded-full font-semibold">🔥 跨境电商卖家必备工具集</span>
+            <h1 class="text-4xl sm:text-5xl font-black tracking-tight mt-6 mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-200">
+                300+ 免费跨境电商计算器
+            </h1>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+                专为亚马逊、TikTok Shop、Shopify、Etsy、eBay 卖家打造。<br>
+                实时计算利润、ROI、平台佣金和FBA费用，无需注册，完全免费。
+            </p>
+        </div>
+    </section>
+
+    <!-- 平台分类导航 -->
+    <div class="max-w-6xl mx-auto px-4 -mt-8 mb-8">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-2 flex flex-wrap justify-center gap-2">
+            <button onclick="filterTools('all')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-900 text-white" data-tab="all">全部工具</button>
+            <button onclick="filterTools('amazon')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="amazon">🛒 亚马逊</button>
+            <button onclick="filterTools('tiktok')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="tiktok">🎵 TikTok Shop</button>
+            <button onclick="filterTools('shopify')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="shopify">🛍️ Shopify</button>
+            <button onclick="filterTools('etsy')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="etsy">🧶 Etsy</button>
+            <button onclick="filterTools('ebay')" class="tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100" data-tab="ebay">📦 eBay</button>
+        </div>
+    </div>
+
+    <!-- 搜索栏 -->
+    <div class="max-w-6xl mx-auto px-4 mb-8">
+        <input type="text" id="searchInput" oninput="filterTools('all')" placeholder="搜索工具名称、平台或国家...（如：Amazon US 电子）"
+               class="w-full bg-white border border-gray-200 rounded-xl px-5 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition placeholder:text-gray-400">
+    </div>
+
+    <!-- 工具网格 -->
+    <main class="max-w-6xl mx-auto px-4 pb-20">
+        <div id="toolsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- 工具卡片 1：亚马逊美国电子产品 -->
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between" data-platform="amazon" data-tags="amazon us electronics fba 利润 计算器 美国">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-md font-semibold">Amazon 美国站</span>
+                        <span class="text-xs text-gray-400">FBA 计算器</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">电子产品利润 & ROI 计算器</h3>
+                    <p class="text-sm text-gray-500 mb-4">2026年最新亚马逊美国站电子产品类目FBA费用和阶梯佣金计算。</p>
+                </div>
+                <a href="/amazon-us-electronics-calculator" class="block text-center bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">立即使用 →</a>
             </div>
+
+            <!-- 工具卡片 2：TikTok Shop 美国 -->
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between hidden" data-platform="tiktok" data-tags="tiktok shop us beauty 美妆 美国">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-black text-white px-2.5 py-1 rounded-md font-semibold">TikTok Shop 美国</span>
+                        <span class="text-xs text-gray-400">社交电商</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">美妆个护利润率计算器</h3>
+                    <p class="text-sm text-gray-500 mb-4">计算6%平台佣金和达人带货分成后的实际利润。</p>
+                </div>
+                <a href="#" class="block text-center bg-gray-100 text-gray-400 font-medium py-2.5 px-4 rounded-xl text-sm cursor-not-allowed">即将上线</a>
+            </div>
+
+            <!-- 工具卡片 3：Shopify 英国 -->
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between hidden" data-platform="shopify" data-tags="shopify uk clothing 服装 英国">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">Shopify 英国站</span>
+                        <span class="text-xs text-gray-400">独立站</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">服装类目利润计算器</h3>
+                    <p class="text-sm text-gray-500 mb-4">结合英国VAT税率和Shopify交易手续费的利润计算。</p>
+                </div>
+                <a href="#" class="block text-center bg-gray-100 text-gray-400 font-medium py-2.5 px-4 rounded-xl text-sm cursor-not-allowed">即将上线</a>
+            </div>
+
+            <!-- 工具卡片 4：Etsy 德国 -->
+            <div class="tool-card bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between hidden" data-platform="etsy" data-tags="etsy germany handmade 手作 德国">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs bg-amber-50 text-amber-600 px-2.5 py-1 rounded-md font-semibold">Etsy 德国站</span>
+                        <span class="text-xs text-gray-400">手作市场</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">手工艺品利润计算器</h3>
+                    <p class="text-sm text-gray-500 mb-4">计算6.5%交易费、$0.20上架费和欧洲VAT后的净利润。</p>
+                </div>
+                <a href="#" class="block text-center bg-gray-100 text-gray-400 font-medium py-2.5 px-4 rounded-xl text-sm cursor-not-allowed">即将上线</a>
+            </div>
+
+        </div>
+
+        <!-- 无结果提示 -->
+        <div id="noResults" class="hidden text-center py-20">
+            <span class="text-5xl">🔍</span>
+            <p class="text-gray-500 mt-4 text-lg">没有找到匹配的工具</p>
+            <p class="text-gray-400 text-sm mt-1">试试其他关键词，或者换个平台分类看看</p>
         </div>
     </main>
 
-    <footer class="bg-white border-t border-gray-200 py-8 text-center text-xs text-gray-400">
-        <p>&copy; 2026 SellersTools Pro</p>
+    <!-- 功能介绍 -->
+    <section class="bg-white border-t border-gray-200 py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl font-bold text-center text-gray-900 mb-4">为什么选择 SellerTools Pro？</h2>
+            <p class="text-gray-500 text-center mb-12 max-w-2xl mx-auto">专为跨境电商卖家设计的免费工具集，所有计算器均采用2026年最新平台费率。</p>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <span class="text-4xl">⚡</span>
+                    <h3 class="font-bold text-gray-900 mt-3 mb-2">实时计算</h3>
+                    <p class="text-sm text-gray-500">数据在浏览器中本地计算，无需等待服务器响应，瞬间出结果。</p>
+                </div>
+                <div>
+                    <span class="text-4xl">🔒</span>
+                    <h3 class="font-bold text-gray-900 mt-3 mb-2">隐私安全</h3>
+                    <p class="text-sm text-gray-500">所有数据仅保存在你的电脑上，不会上传到任何服务器。</p>
+                </div>
+                <div>
+                    <span class="text-4xl">🌍</span>
+                    <h3 class="font-bold text-gray-900 mt-3 mb-2">多平台支持</h3>
+                    <p class="text-sm text-gray-500">覆盖亚马逊、TikTok Shop、Shopify、Etsy、eBay等主流平台。</p>
+                </div>
+                <div>
+                    <span class="text-4xl">💰</span>
+                    <h3 class="font-bold text-gray-900 mt-3 mb-2">完全免费</h3>
+                    <p class="text-sm text-gray-500">基础功能完全免费使用，专业版按需解锁更多高级功能。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-950 text-gray-500 py-12 px-4 text-center text-sm">
+        <p>© 2026 SellerTools Pro. All rights reserved.</p>
+        <p class="mt-2 text-xs text-gray-600">跨境电商卖家必备工具 · 精准计算 · 助力出海</p>
     </footer>
+
+    <script>
+        function filterTools(platform) {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+
+            // 更新按钮样式
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                if (btn.dataset.tab === platform || (platform === 'all' && btn.dataset.tab === 'all')) {
+                    btn.className = "tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-900 text-white";
+                } else {
+                    btn.className = "tab-btn px-5 py-2.5 rounded-xl text-sm font-medium transition bg-gray-50 text-gray-600 hover:bg-gray-100";
+                }
+            });
+
+            const cards = document.querySelectorAll('.tool-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const cardPlatform = card.dataset.platform;
+                const cardTags = card.dataset.tags;
+
+                const matchesTab = (platform === 'all' || cardPlatform === platform);
+                const matchesSearch = !query || cardTags.includes(query);
+
+                if (matchesTab && matchesSearch) {
+                    card.classList.remove('hidden');
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            document.getElementById('noResults').classList.toggle('hidden', visibleCount > 0);
+        }
+    </script>
 </body>
 </html>
