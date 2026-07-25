@@ -298,10 +298,16 @@ async function verifyLicenseKey() {{
     var el = document.getElementById('verifyMessage');
     if(!key) {{ el.innerText='Please enter a key.'; el.className='text-xs text-red-500 mt-1'; return; }}
     el.innerText='Verifying...'; el.className='text-xs text-yellow-600 mt-1';
-    setTimeout(function(){{
-        if(key.toLowerCase()==='demo123') {{ localStorage.setItem('is_premium_user','true'); el.innerText='Activated! PRO unlocked.'; el.className='text-xs text-green-600 mt-1'; setTimeout(closePaywallModal,1500); }}
-        else {{ el.innerText='Invalid key. Try demo123.'; el.className='text-xs text-red-500 mt-1'; }}
-    }},800);
+    try {{
+        var r = await fetch('https://api.lemonsqueezy.com/v1/licenses/activate', {{
+            method: 'POST',
+            headers: {{ 'Accept':'application/json','Content-Type':'application/json' }},
+            body: JSON.stringify({{ license_key: key, instance_name: 'seller-tools-pro' }})
+        }});
+        var d = await r.json();
+        if(d.activated) {{ localStorage.setItem('is_premium_user','true'); el.innerText='License activated! PRO unlocked.'; el.className='text-xs text-green-600 mt-1'; setTimeout(closePaywallModal,1500); }}
+        else {{ el.innerText='Invalid license key.'; el.className='text-xs text-red-500 mt-1'; }}
+    }} catch(e) {{ el.innerText='Network error. Try again.'; el.className='text-xs text-red-500 mt-1'; }}
 }}
 calculateProfit();
 </script>
@@ -482,10 +488,16 @@ async function verifyLicenseKey() {{
     var el = document.getElementById('verifyMessage');
     if(!key) {{ el.innerText='Please enter a key.'; el.className='text-xs text-red-500 mt-1'; return; }}
     el.innerText='Verifying...'; el.className='text-xs text-yellow-600 mt-1';
-    setTimeout(function(){{
-        if(key.toLowerCase()==='demo123') {{ localStorage.setItem('is_premium_user','true'); el.innerText='Activated! PRO unlocked.'; el.className='text-xs text-green-600 mt-1'; setTimeout(closePaywallModal,1500); }}
-        else {{ el.innerText='Invalid key. Try demo123.'; el.className='text-xs text-red-500 mt-1'; }}
-    }},800);
+    try {{
+        var r = await fetch('https://api.lemonsqueezy.com/v1/licenses/activate', {{
+            method: 'POST',
+            headers: {{ 'Accept':'application/json','Content-Type':'application/json' }},
+            body: JSON.stringify({{ license_key: key, instance_name: 'seller-tools-pro' }})
+        }});
+        var d = await r.json();
+        if(d.activated) {{ localStorage.setItem('is_premium_user','true'); el.innerText='License activated! PRO unlocked.'; el.className='text-xs text-green-600 mt-1'; setTimeout(closePaywallModal,1500); }}
+        else {{ el.innerText='Invalid license key.'; el.className='text-xs text-red-500 mt-1'; }}
+    }} catch(e) {{ el.innerText='Network error. Try again.'; el.className='text-xs text-red-500 mt-1'; }}
 }}
 calculateProfit();
 </script>
@@ -659,10 +671,16 @@ async function verifyLicenseKey() {{
     var el = document.getElementById('verifyMessage');
     if(!key) {{ el.innerText='Please enter a key.'; el.className='text-xs text-red-500 mt-1'; return; }}
     el.innerText='Verifying...'; el.className='text-xs text-yellow-600 mt-1';
-    setTimeout(function(){{
-        if(key.toLowerCase()==='demo123') {{ localStorage.setItem('is_premium_user','true'); el.innerText='Activated! PRO unlocked.'; el.className='text-xs text-green-600 mt-1'; setTimeout(closePaywallModal,1500); }}
-        else {{ el.innerText='Invalid key. Try demo123.'; el.className='text-xs text-red-500 mt-1'; }}
-    }},800);
+    try {{
+        var r = await fetch('https://api.lemonsqueezy.com/v1/licenses/activate', {{
+            method: 'POST',
+            headers: {{ 'Accept':'application/json','Content-Type':'application/json' }},
+            body: JSON.stringify({{ license_key: key, instance_name: 'seller-tools-pro' }})
+        }});
+        var d = await r.json();
+        if(d.activated) {{ localStorage.setItem('is_premium_user','true'); el.innerText='License activated! PRO unlocked.'; el.className='text-xs text-green-600 mt-1'; setTimeout(closePaywallModal,1500); }}
+        else {{ el.innerText='Invalid license key.'; el.className='text-xs text-red-500 mt-1'; }}
+    }} catch(e) {{ el.innerText='Network error. Try again.'; el.className='text-xs text-red-500 mt-1'; }}
 }}
 calculateProfit();
 </script>
@@ -854,10 +872,16 @@ async function verifyLicenseKey() {{
     var el = document.getElementById('verifyMessage');
     if(!key) {{ el.innerText='Please enter a key.'; el.className='text-xs text-red-500 mt-1'; return; }}
     el.innerText='Verifying...'; el.className='text-xs text-yellow-600 mt-1';
-    setTimeout(function(){{
-        if(key.toLowerCase()==='demo123') {{ localStorage.setItem('is_premium_user','true'); el.innerText='Activated! PRO unlocked.'; el.className='text-xs text-green-600 mt-1'; setTimeout(closePaywallModal,1500); }}
-        else {{ el.innerText='Invalid key. Try demo123.'; el.className='text-xs text-red-500 mt-1'; }}
-    }},800);
+    try {{
+        var r = await fetch('https://api.lemonsqueezy.com/v1/licenses/activate', {{
+            method: 'POST',
+            headers: {{ 'Accept':'application/json','Content-Type':'application/json' }},
+            body: JSON.stringify({{ license_key: key, instance_name: 'seller-tools-pro' }})
+        }});
+        var d = await r.json();
+        if(d.activated) {{ localStorage.setItem('is_premium_user','true'); el.innerText='License activated! PRO unlocked.'; el.className='text-xs text-green-600 mt-1'; setTimeout(closePaywallModal,1500); }}
+        else {{ el.innerText='Invalid license key.'; el.className='text-xs text-red-500 mt-1'; }}
+    }} catch(e) {{ el.innerText='Network error. Try again.'; el.className='text-xs text-red-500 mt-1'; }}
 }}
 calculateProfit();
 </script>
@@ -1045,10 +1069,16 @@ async function verifyLicenseKey() {{
     var el = document.getElementById('verifyMessage');
     if(!key) {{ el.innerText='Please enter a key.'; el.className='text-xs text-red-500 mt-1'; return; }}
     el.innerText='Verifying...'; el.className='text-xs text-yellow-600 mt-1';
-    setTimeout(function(){{
-        if(key.toLowerCase()==='demo123') {{ localStorage.setItem('is_premium_user','true'); el.innerText='Activated! PRO unlocked.'; el.className='text-xs text-green-600 mt-1'; setTimeout(closePaywallModal,1500); }}
-        else {{ el.innerText='Invalid key. Try demo123.'; el.className='text-xs text-red-500 mt-1'; }}
-    }},800);
+    try {{
+        var r = await fetch('https://api.lemonsqueezy.com/v1/licenses/activate', {{
+            method: 'POST',
+            headers: {{ 'Accept':'application/json','Content-Type':'application/json' }},
+            body: JSON.stringify({{ license_key: key, instance_name: 'seller-tools-pro' }})
+        }});
+        var d = await r.json();
+        if(d.activated) {{ localStorage.setItem('is_premium_user','true'); el.innerText='License activated! PRO unlocked.'; el.className='text-xs text-green-600 mt-1'; setTimeout(closePaywallModal,1500); }}
+        else {{ el.innerText='Invalid license key.'; el.className='text-xs text-red-500 mt-1'; }}
+    }} catch(e) {{ el.innerText='Network error. Try again.'; el.className='text-xs text-red-500 mt-1'; }}
 }}
 calculateProfit();
 </script>
@@ -1210,10 +1240,16 @@ async function verifyLicenseKey() {{
     var el = document.getElementById('verifyMessage');
     if(!key) {{ el.innerText='Please enter a key.'; el.className='text-xs text-red-500 mt-1'; return; }}
     el.innerText='Verifying...'; el.className='text-xs text-yellow-600 mt-1';
-    setTimeout(function(){{
-        if(key.toLowerCase()==='demo123') {{ localStorage.setItem('is_premium_user','true'); el.innerText='Activated! PRO unlocked.'; el.className='text-xs text-green-600 mt-1'; setTimeout(closePaywallModal,1500); }}
-        else {{ el.innerText='Invalid key. Try demo123.'; el.className='text-xs text-red-500 mt-1'; }}
-    }},800);
+    try {{
+        var r = await fetch('https://api.lemonsqueezy.com/v1/licenses/activate', {{
+            method: 'POST',
+            headers: {{ 'Accept':'application/json','Content-Type':'application/json' }},
+            body: JSON.stringify({{ license_key: key, instance_name: 'seller-tools-pro' }})
+        }});
+        var d = await r.json();
+        if(d.activated) {{ localStorage.setItem('is_premium_user','true'); el.innerText='License activated! PRO unlocked.'; el.className='text-xs text-green-600 mt-1'; setTimeout(closePaywallModal,1500); }}
+        else {{ el.innerText='Invalid license key.'; el.className='text-xs text-red-500 mt-1'; }}
+    }} catch(e) {{ el.innerText='Network error. Try again.'; el.className='text-xs text-red-500 mt-1'; }}
 }}
 calculateProfit();
 </script>
@@ -1372,10 +1408,16 @@ async function verifyLicenseKey() {{
     var el = document.getElementById('verifyMessage');
     if(!key) {{ el.innerText='Please enter a key.'; el.className='text-xs text-red-500 mt-1'; return; }}
     el.innerText='Verifying...'; el.className='text-xs text-yellow-600 mt-1';
-    setTimeout(function(){{
-        if(key.toLowerCase()==='demo123') {{ localStorage.setItem('is_premium_user','true'); el.innerText='Activated! PRO unlocked.'; el.className='text-xs text-green-600 mt-1'; setTimeout(closePaywallModal,1500); }}
-        else {{ el.innerText='Invalid key. Try demo123.'; el.className='text-xs text-red-500 mt-1'; }}
-    }},800);
+    try {{
+        var r = await fetch('https://api.lemonsqueezy.com/v1/licenses/activate', {{
+            method: 'POST',
+            headers: {{ 'Accept':'application/json','Content-Type':'application/json' }},
+            body: JSON.stringify({{ license_key: key, instance_name: 'seller-tools-pro' }})
+        }});
+        var d = await r.json();
+        if(d.activated) {{ localStorage.setItem('is_premium_user','true'); el.innerText='License activated! PRO unlocked.'; el.className='text-xs text-green-600 mt-1'; setTimeout(closePaywallModal,1500); }}
+        else {{ el.innerText='Invalid license key.'; el.className='text-xs text-red-500 mt-1'; }}
+    }} catch(e) {{ el.innerText='Network error. Try again.'; el.className='text-xs text-red-500 mt-1'; }}
 }}
 calculateProfit();
 </script>
