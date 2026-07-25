@@ -248,7 +248,7 @@ def build_amazon_html(p, c, cat):
                 </div>
                 <p class="text-2xl font-black text-gray-900">$4.99</p>
             </div>
-            <a href="https://lemonsqueezy.com" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-lg mt-4 transition shadow-sm">Buy License Key</a>
+            <a href="https://piwatools.lemonsqueezy.com/checkout/buy/95fff32f-9512-4004-9086-886f84ffadcb" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-lg mt-4 transition shadow-sm">Buy License Key</a>
         </div>
         <div class="space-y-2">
             <label class="block text-xs font-semibold text-gray-500 uppercase tracking-wider">Already purchased? Enter License Key</label>
@@ -439,7 +439,7 @@ def build_tiktok_html(p, c, cat):
                 <div><p class="font-semibold text-gray-900">Lifetime Access</p><p class="text-xs text-gray-500">All calculators included.</p></div>
                 <p class="text-2xl font-black text-gray-900">$4.99</p>
             </div>
-            <a href="https://lemonsqueezy.com" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-lg mt-4 transition shadow-sm">Buy License Key</a>
+            <a href="https://piwatools.lemonsqueezy.com/checkout/buy/95fff32f-9512-4004-9086-886f84ffadcb" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-lg mt-4 transition shadow-sm">Buy License Key</a>
         </div>
         <div class="space-y-2">
             <label class="block text-xs font-semibold text-gray-500 uppercase tracking-wider">License Key</label>
@@ -618,7 +618,7 @@ def build_shopify_html(p, c, cat):
                 <div><p class="font-semibold text-gray-900">Lifetime Access</p><p class="text-xs text-gray-500">All calculators included.</p></div>
                 <p class="text-2xl font-black text-gray-900">$4.99</p>
             </div>
-            <a href="https://lemonsqueezy.com" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-lg mt-4 transition shadow-sm">Buy License Key</a>
+            <a href="https://piwatools.lemonsqueezy.com/checkout/buy/95fff32f-9512-4004-9086-886f84ffadcb" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-lg mt-4 transition shadow-sm">Buy License Key</a>
         </div>
         <div class="space-y-2">
             <label class="block text-xs font-semibold text-gray-500 uppercase tracking-wider">License Key</label>
@@ -808,7 +808,7 @@ def build_etsy_html(p, c, cat):
                 <div><p class="font-semibold text-gray-900">Lifetime Access</p><p class="text-xs text-gray-500">All calculators included.</p></div>
                 <p class="text-2xl font-black text-gray-900">$4.99</p>
             </div>
-            <a href="https://lemonsqueezy.com" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-lg mt-4 transition shadow-sm">Buy License Key</a>
+            <a href="https://piwatools.lemonsqueezy.com/checkout/buy/95fff32f-9512-4004-9086-886f84ffadcb" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-lg mt-4 transition shadow-sm">Buy License Key</a>
         </div>
         <div class="space-y-2">
             <label class="block text-xs font-semibold text-gray-500 uppercase tracking-wider">License Key</label>
@@ -998,7 +998,7 @@ def build_ebay_html(p, c, cat):
                 <div><p class="font-semibold text-gray-900">Lifetime Access</p><p class="text-xs text-gray-500">All calculators included.</p></div>
                 <p class="text-2xl font-black text-gray-900">$4.99</p>
             </div>
-            <a href="https://lemonsqueezy.com" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-lg mt-4 transition shadow-sm">Buy License Key</a>
+            <a href="https://piwatools.lemonsqueezy.com/checkout/buy/95fff32f-9512-4004-9086-886f84ffadcb" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-lg mt-4 transition shadow-sm">Buy License Key</a>
         </div>
         <div class="space-y-2">
             <label class="block text-xs font-semibold text-gray-500 uppercase tracking-wider">License Key</label>
@@ -1171,7 +1171,7 @@ def build_walmart_html(p, c, cat):
                 <div><p class="font-semibold text-gray-900">Lifetime Access</p><p class="text-xs text-gray-500">All calculators included.</p></div>
                 <p class="text-2xl font-black text-gray-900">$4.99</p>
             </div>
-            <a href="https://lemonsqueezy.com" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-lg mt-4 transition shadow-sm">Buy License Key</a>
+            <a href="https://piwatools.lemonsqueezy.com/checkout/buy/95fff32f-9512-4004-9086-886f84ffadcb" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-lg mt-4 transition shadow-sm">Buy License Key</a>
         </div>
         <div class="space-y-2">
             <label class="block text-xs font-semibold text-gray-500 uppercase tracking-wider">License Key</label>
@@ -1334,7 +1334,7 @@ def build_mercadolibre_html(p, c, cat):
                 <div><p class="font-semibold text-gray-900">Lifetime Access</p><p class="text-xs text-gray-500">All calculators included.</p></div>
                 <p class="text-2xl font-black text-gray-900">$4.99</p>
             </div>
-            <a href="https://lemonsqueezy.com" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-lg mt-4 transition shadow-sm">Buy License Key</a>
+            <a href="https://piwatools.lemonsqueezy.com/checkout/buy/95fff32f-9512-4004-9086-886f84ffadcb" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-lg mt-4 transition shadow-sm">Buy License Key</a>
         </div>
         <div class="space-y-2">
             <label class="block text-xs font-semibold text-gray-500 uppercase tracking-wider">License Key</label>
@@ -1518,7 +1518,7 @@ if __name__ == "__main__":
                 <span class="text-2xl">⚡</span>
                 <span class="font-bold text-xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-600">SellerTools Pro</span>
             </div>
-            <a href="https://lemonsqueezy.com" target="_blank" class="text-sm bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg font-medium transition">Activate Pro</a>
+            <a href="https://piwatools.lemonsqueezy.com/checkout/buy/95fff32f-9512-4004-9086-886f84ffadcb" target="_blank" class="text-sm bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg font-medium transition">Activate Pro</a>
         </div>
     </header>
 
